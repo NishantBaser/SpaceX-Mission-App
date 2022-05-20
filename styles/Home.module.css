@@ -1,0 +1,20 @@
+/*
+For Mobile Resolutions
+*/
+
+.filterContainer {
+  background-color: #ffffff;
+  margin          : 0px 10px;
+  padding         : 5px 10px 30px 10px;
+  border-radius   : 5px;
+}
+
+/*
+For iPads and Android Tablets
+*/
+@media (min-width: 700px) and (max-width: 1024px) {}
+
+/*
+For Desktop and higher resolutions
+*/
+@media (min-width: 1024px) and (max-width: 1440px) {}

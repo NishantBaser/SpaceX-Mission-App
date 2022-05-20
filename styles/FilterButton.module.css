@@ -1,0 +1,18 @@
+.button {
+    background   : #c5e09a;
+    border       : none;
+    border-radius: 0.25rem;
+    padding      : 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.button_active {
+    background   : #ed3833;
+    border       : none;
+    border-radius: 0.25rem;
+    padding      : 0.5rem 2rem;
+}
+
+.button:hover {
+    background: #7eb805;
+}

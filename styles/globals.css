@@ -1,0 +1,159 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+For Mobile Resolutions
+*/
+
+.appHeader {
+  font-size  : 21px;
+  font-weight: bold;
+  margin     : 20px;
+  text-align: center;
+}
+
+.filterContainer,
+.mission {
+  background-color: white;
+  margin          : 8px;
+  padding         : 8px 8px 8px 8px;
+  border-radius   : 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+.filterHeading {
+  font-weight: bolder;
+  font-size      : 20px;
+  margin-bottom: 12px;
+}
+
+hr {
+  background-color: black;
+  width           : 90%;
+}
+
+.filterSubContainer {
+  display       : flex;
+  flex-direction: column;
+  padding       : 0 10px 20px 10px;
+}
+
+.filterSubHeading {
+  display        : flex;
+  justify-content: center;
+  font-size      : 20px;
+}
+
+.filterGrid {
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap         : 0.75rem;
+  grid-column-gap      : 0.75rem;
+  justify-items        : center;
+  align-items          : center;
+}
+
+button:focus {
+  outline   : none;
+  box-shadow: none;
+}
+
+/*
+Mission style
+*/
+
+.mission {
+  margin-top: 20px;
+  padding: 12px;
+  height : 100%;
+}
+
+.missionTitle {
+  color      : #4b4f8b;
+  font-weight: bolder;
+  margin : 20px 0px;
+}
+
+.cardDetails {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+
+.missionImage {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.messageContainer {
+  width: 100%;
+}
+
+.messageLabel {
+  background-color: white;
+  margin          : 0 10px;
+  border-radius   : 8px;
+  padding         : 12px;
+  text-align      : center;
+}
+
+/*
+For iPads and Android Tablets
+*/
+@media (min-width: 700px) {
+  .appContainer {
+    display: flex;
+  }
+
+  .missionContainer {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap         : 1rem;
+    grid-column-gap      : 1rem;
+    justify-items        : center;
+    align-items          : flex-start;
+  }
+
+  .filterContainer {
+    margin      : 0;
+    margin-right: 1rem;
+  }
+
+  .mission {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .filterSubHeading {
+    font-size: 16px;
+  }
+
+  .filterHeading {
+    font-size: 16px;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+}
+
+/*
+For Desktops and Higher Resolutions
+*/
+@media (min-width: 1024px) {
+  .missionContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

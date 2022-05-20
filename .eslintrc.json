@@ -1,0 +1,47 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "react/jsx-props-no-spreading": "off"
+    },
+    "globals": {
+        "fetch": false
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.test.js",
+                "**/*.test.jsx"
+            ],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
+}
