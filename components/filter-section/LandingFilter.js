@@ -1,5 +1,4 @@
 import React from 'react';
-
 import FilterButton from './FilterButton';
 
 function LandingFilter({ landing, setLanding }) {

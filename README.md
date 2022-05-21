@@ -16,18 +16,23 @@
 2.  API used [SpaceX](https://docs.spacexdata.com/)
 3.  Deployed on [Vercel](https://vercel.com/)
 
-# Lighthouse Report
+
+# Lighthouse Scores
+
+1. For [Mobile] (https://i.imgur.com/KBL6M4y.jpg)
+2. For [Desktop] (https://i.imgur.com/9X6aIy6.jpg)
 
 
 # Screenshots of All devices
 
 ## Mobile
-
+(https://i.imgur.com/FrP5VBk.jpg)
 
 ## iPad/Tablets
-
+(https://i.imgur.com/ZTClKip.jpg)
 
 ## Desktop
+(https://i.imgur.com/KDNbeZ3.jpg)
 
 
 

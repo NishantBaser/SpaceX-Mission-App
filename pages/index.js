@@ -2,15 +2,16 @@ import Head from "next/head";
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import FiltersView from "../components/FiltersView";
-import Mission from "../components/Misson";
-import Message from "../components/Message";
+import FiltersView from "../components/filter-section/FiltersView";
+import Mission from "../components/mission-card/Misson";
+import Message from "../components/mission-card/Message";
 import * as constant from "../const";
 import makeQueryParams from '../utils';
 
 function Home({ response }) {
   const { query } = useRouter();
   const [serverQuery] = useState(query);
+  
   const { data, error } = useSWR(makeQueryParams(query), {
     dedupingInterval: 6000,
     initialData: (JSON.stringify(serverQuery) === JSON.stringify(query)) ? response : null,

@@ -25,6 +25,7 @@
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         "linebreak-style": [
+            0,
             "error",
             "windows"
         ],

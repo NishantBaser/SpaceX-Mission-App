@@ -6,10 +6,9 @@ function YearsFilter({ selectedYear, setSelectedYear }) {
 
     useEffect(() => {
         const startYear = 2006;
-        setYears([]);
         const curYear = new Date().getUTCFullYear();
         for (let i = startYear; i <= curYear; i += 1) {
-            setYears(years => [...years, i]);
+            setYears(y => [...y, i]);
         }
     }, []);
 
